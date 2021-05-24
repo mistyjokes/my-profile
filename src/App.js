@@ -2,6 +2,7 @@ import React from "react";
 import { Switch, Route, BrowserRouter as Router, Link} from "react-router-dom";
 import "./App.css";
 import Home from "./components/Home";
+import Contact from "./components/Contact"
 
 
 export default function App() {
@@ -18,7 +19,7 @@ export default function App() {
           </nav>
         <div>
             <Switch>
-            <Route path="/contact"> <Contact /> </Route>
+            <Route path="/contact" component={Contact}/>
               <Route path="/about">
                 <About />
               </Route>
@@ -40,10 +41,6 @@ function About() {
 
 function Projects() {
   return <h2>Projects</h2>;
-}
-
-function Contact(){
-  return <h2>Contact</h2>
 }
 
 
