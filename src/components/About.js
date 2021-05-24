@@ -3,6 +3,7 @@ import "../styles/About.css"
 import {Link} from "react-router-dom";
 import resume from "../files/ReneCleverResume3_10_21_2nd.pdf";
 import resIcon from "../images/resume.png";
+import rene from "../images/clever.rene.JPG";
 
 
 
@@ -23,18 +24,21 @@ class About extends Component {
 
         
         return(
-            <div className="para-container">
-                <p> {message}</p>
+            <div >
 
-            
+                <div className="para-container">                
+                    <p> {message}</p>
+                    <div> 
+                        <Link style={{color:'black'}} to= {resume} target="_blank" download> 
+                        <div className="resIcon"> <img src={resIcon} alt="res-icon"/> </div>Resume</Link>
+                    </div>
+                </div>
 
-            <div> 
-                <Link to= {resume} target="_blank" download> Right Here</Link>
-            </div>
-
-
-
-
+                <div className="photo-container">
+                    <div className="rene">
+                        <img src={rene} alt="rene"/>
+                    </div>
+                </div>
             </div>
 
         );
