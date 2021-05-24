@@ -1,0 +1,13 @@
+.para-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: white;
+    box-shadow: 2px 2px 8px 8px #ffffff;
+    padding: 100px;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    border-radius: 20px;
+    width: 500px;
+    margin-left: 10rem;
+}

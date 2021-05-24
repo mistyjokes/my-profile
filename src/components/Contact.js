@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-
+import "../styles/Contact.css";
+import linkIcon from "../images/link.png";
 
 
 
@@ -65,25 +66,34 @@ class Appointment extends Component{
   
       return(
         <form className="form-container" id="contactForm" onSubmit = {this.onFormSubmit}>
+            <div> <h1 className="headingD"> Contact Me </h1></div>
+
           <div>
-                <label>Name:</label>
+                <label className="colorScheme">Name:</label>
                 <input type="text" onChange= {this.handleNameChange} value={this.state.Name} ></input>
           </div>
 
+          <br/> <br/>
+
           <div>
-                <label>Email:</label>
+                <label className="colorScheme">Email:</label>
                 <input type="email" onChange= {this.handleEmailChange} value={this.state.Email} ></input>
           </div>
 
+          <br/> <br/>
 
           <div>
-                <label for="paragraph">Message:</label>
+                <label for="paragraph" className="colorScheme" >Message:</label>
                 <textarea id="paragraph" name="paragraph" rows="7" cols="70" form="contactForm" value={this.state.Message} onChange={this.handleMessageChange}> </textarea>
           </div>
   
           <br/> <br/>
+
+          {/* <div className="info">
+          <img src={linkIcon} alt={"link-icon"} />
+          </div>   ADD THIS LATER*/}
   
-          <button onClick = {this.onFormSubmit}>Submit</button>
+          <button onClick = {this.onFormSubmit}> <b>Submit</b> </button>
   
         </form>
   
