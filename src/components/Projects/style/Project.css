@@ -34,3 +34,46 @@
     width: 305px;
     background-color: rgb(235, 94, 228);
 }
+
+
+.gif-holder{
+   display: flex;
+   align-items:center;
+   justify-content: center;
+   margin: 10px;
+   padding:20px;
+   border: 5px solid black;
+   background-color: teal;
+   height: 400px;
+   width: 850px;
+   float:left;
+}
+
+.gif-holder img{
+    border: 2px solid white;
+    box-shadow: none;
+    border-radius: 0;
+    width:auto;
+}
+
+.descripPara{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: rgb(209, 209, 16);
+    border: 5px solid black;
+    border-radius: 5px;
+    width: 500px;
+    padding: 15px;
+    margin: 10em auto 0;
+}
+
+.descripPara a:hover{
+    color: red;
+}
+
+.textDesign{
+    padding:10px;
+    border: 2px solid black;
+    background-color: rgb(196, 93, 75);
+}
