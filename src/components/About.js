@@ -27,10 +27,10 @@ class About extends Component {
             <div >
 
                 <div className="para-container">                
-                    <p> {message}</p>
+                    <p><b> {message} </b> </p>
                     <div> 
                         <Link style={{color:'black'}} to= {resume} target="_blank" download> 
-                        <div className="resIcon"> <img src={resIcon} alt="res-icon"/> </div>Resume</Link>
+                        <div className="resIcon"> <img src={resIcon} alt="res-icon"/> </div> <b> Resume</b></Link>
                     </div>
                 </div>
 

@@ -13,13 +13,16 @@ export default function App() {
 
       <Router>
         <div>
-          <nav className="header">
-            
-              <li className="items"> <Link to="/" style={{textDecoration:'none'}}>Home</Link> </li>
-              <li className="items"> <Link to="/about" style={{textDecoration:'none'}}>About</Link> </li>
-              <li className="items"> <Link to="/projects" style={{textDecoration:'none'}}>Projects</Link> </li>
-              <li className="items"> <Link to="/contact" style={{textDecoration:'none'}}>Contact Me</Link> </li>
-          </nav>
+
+          <div className="star">  
+            <nav className="header">
+              
+                <li className="items"> <Link to="/" style={{textDecoration:'none'}}>Home</Link> </li>
+                <li className="items"> <Link to="/about" style={{textDecoration:'none'}}>About</Link> </li>
+                <li className="items"> <Link to="/projects" style={{textDecoration:'none'}}>Projects</Link> </li>
+                <li className="items"> <Link to="/contact" style={{textDecoration:'none'}}>Contact Me</Link> </li>
+            </nav>
+          </div>
         <div>
             <Switch>
               <Route path="/proj" component={proj}/>

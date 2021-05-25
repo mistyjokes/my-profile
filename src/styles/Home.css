@@ -1,6 +1,7 @@
 
 .Icon{
-    padding: 10px 5% 10% 10%;
+    margin: 20px 5% 10% 10%;
+    float:left;
 }
 
 .greeting{
@@ -13,5 +14,7 @@
     border-radius: 5px;
     width: 500px;
     margin: 0 auto 0;
+    float: right;
+    margin-top: 7rem;
     margin-right: 10rem;
 }
