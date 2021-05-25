@@ -21,8 +21,10 @@ code {
   overflow: hidden;
   display: flex;
   justify-content: space-between;
-  box-shadow: 2px 2px 30px 20px violet;
-  background-color: blueviolet;
+  box-shadow: 2px 2px 30px 20px violet; 
+  /* if I add the inset to box-shadow the image narrows which is cool but background-image: url("./images/stars.gif") must be called in .header first  */
+  background-color: blueviolet; 
+  /* background:url("./images/stars.gif") makes the background the stars and it looks amazing  */
   position: sticky;
   top: 15px;
   margin: 25px auto 50px;
@@ -30,10 +32,12 @@ code {
   border-radius: 20px;
   border: 3px solid black ;
   font-size: large;
+  font-weight: bold;
 }
 
+
 h1, h2, p, ul, li {
-  font-family: sans-serif;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .items{

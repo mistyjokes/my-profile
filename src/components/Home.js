@@ -20,9 +20,6 @@ class Home extends Component {
                     
                     </div>
 
-                
-
-
 
 
             </div>
